@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>StackOverflow Items Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="lib/jquery-3.3.1.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-group mb-3" id="popKey">
+
+            <input type="text" class="form-control" placeholder="Title Keyword" aria-label="Keyword" aria-describedby="basic-addon0" id="keyword">
+            <div class="input-group-prepend" id="search-click">
+                <span class="input-group-text" id="basic-addon0"><i class="fas fa-search"></i></span>
+            </div>
+        </div>
+
+        <div id="popover">
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" class="form-control" id="userId" aria-describedby="basic-addon1" placeholder="Owner's user id">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-tags"></i></span>
+                </div>
+                <input type="text" class="form-control" aria-describedby="basic-addon2" placeholder="Tags separating with ;"
+                    id="tags">
+            </div>
+
+            <label for="views">Minimum number of views</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3"><i class="fas fa-eye"></i></span>
+                </div>
+                <input type="number" class="form-control" id="views" aria-describedby="basic-addon3" min="0">
+            </div>
+            <label for="answers">Minimum number of answers</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon4"><i class="fas fa-question"></i></span>
+                </div>
+                <input type="number" class="form-control" id="answers" aria-describedby="basic-addon4" min="0">
+            </div>
+            <label for="basic-url">Question closed?</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="closed">Closed</label>
+                </div>
+                <select class="custom-select" id="closed">
+                    <option selected value="">Choose...</option>
+                    <option value=true>True</option>
+                    <option value=false>False</option>
+                </select>
+            </div>
+
+        </div>
+
+        <ul class="list-group list-group-flush"id="items"></ul>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+img {
+    width: 100%;
+}
+
+#popKey {
+    margin-bottom: 0 !important;
+}
+
+#popover {
+    display: none;
+    padding: 1em;
+    border: 1px grey solid;
+    border-radius: 0px 0px 4px 4px;
+    border-top-color: transparent;
+}
+li:hover{
+    background-color: rgb(212, 209, 209);
+    color: white;
+  }
+  .container {
+      margin-top: 4vh;
+  }
